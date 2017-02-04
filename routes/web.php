@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'indexController@index');
+Route::get('/project/{id?}', 'indexController@view');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
