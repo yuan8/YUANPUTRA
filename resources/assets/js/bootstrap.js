@@ -44,3 +44,10 @@ window.axios.defaults.headers.common = {
 //     broadcaster: 'pusher',
 //     key: 'your-pusher-key'
 // });
+
+import Echo from "laravel-echo"
+
+window.Echo = new Echo({
+    broadcaster: 'pusher',
+    key: '5c986d7986d4bb187a12'
+});

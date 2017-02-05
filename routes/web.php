@@ -11,9 +11,24 @@
 |
 */
 
+
+// use App\Events\ChatPusherEvent;
+
 Route::get('/', 'indexController@index');
 Route::get('/project/{id?}', 'indexController@view');
 
 Auth::routes();
 
+Route::get('/mes',function(){
+	return view('pages.mes'); 
+});
+
+Route::get('/pusher', function() {
+    event(new App\Events\HelloPusherEvent('Hi there Pusher!'));
+    return "Event has been sent!";
+});
+
+
 Route::get('/home', 'HomeController@index');
+
+

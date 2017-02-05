@@ -2,6 +2,10 @@
 
 return [
 
+    // vikla brige pusher
+    
+
+
     /*
     |--------------------------------------------------------------------------
     | Application Name
@@ -140,6 +144,7 @@ return [
         /*
          * Laravel Framework Service Providers...
          */
+        Vinkla\Pusher\PusherServiceProvider::class,
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
         Illuminate\Bus\BusServiceProvider::class,
